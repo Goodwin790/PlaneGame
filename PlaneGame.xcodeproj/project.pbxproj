@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C18A86862A420B2300D10B3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C18A86852A420B2200D10B3A /* GoogleService-Info.plist */; };
+		C19A6EF12A3D469500A74172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6EF02A3D469500A74172 /* AppDelegate.swift */; };
+		C19A6EF32A3D469500A74172 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6EF22A3D469500A74172 /* SceneDelegate.swift */; };
+		C19A6EF52A3D469500A74172 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6EF42A3D469500A74172 /* ViewController.swift */; };
+		C19A6EF82A3D469500A74172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19A6EF62A3D469500A74172 /* Main.storyboard */; };
+		C19A6EFA2A3D469700A74172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19A6EF92A3D469700A74172 /* Assets.xcassets */; };
+		C19A6EFD2A3D469700A74172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19A6EFB2A3D469700A74172 /* LaunchScreen.storyboard */; };
+		C19A6F052A3D46B100A74172 /* Moveable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6F042A3D46B100A74172 /* Moveable.swift */; };
+		C19A6F0A2A3D46C200A74172 /* RightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6F072A3D46C200A74172 /* RightButton.swift */; };
+		C19A6F0B2A3D46C200A74172 /* LeftButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6F082A3D46C200A74172 /* LeftButton.swift */; };
+		C19A6F0E2A3D46F500A74172 /* PlaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6F0D2A3D46F500A74172 /* PlaneView.swift */; };
+		C19A6F102A3DCDC700A74172 /* UfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6F0F2A3DCDC700A74172 /* UfoView.swift */; };
+		C19A6F132A3DEC1B00A74172 /* ExplosionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6F122A3DEC1B00A74172 /* ExplosionView.swift */; };
+		F362621604F716A0F2E7F68B /* Pods_PlaneGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89869B5089B3F61426094386 /* Pods_PlaneGame.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		39B48AE0081B0F0C946095E0 /* Pods-PlaneGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaneGame.release.xcconfig"; path = "Target Support Files/Pods-PlaneGame/Pods-PlaneGame.release.xcconfig"; sourceTree = "<group>"; };
+		89869B5089B3F61426094386 /* Pods_PlaneGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaneGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0BD3CF8009F0DF2441E387F /* Pods-PlaneGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaneGame.debug.xcconfig"; path = "Target Support Files/Pods-PlaneGame/Pods-PlaneGame.debug.xcconfig"; sourceTree = "<group>"; };
+		C18A86852A420B2200D10B3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C19A6EED2A3D469500A74172 /* PlaneGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaneGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19A6EF02A3D469500A74172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C19A6EF22A3D469500A74172 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C19A6EF42A3D469500A74172 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C19A6EF72A3D469500A74172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C19A6EF92A3D469700A74172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C19A6EFC2A3D469700A74172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C19A6EFE2A3D469700A74172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C19A6F042A3D46B100A74172 /* Moveable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moveable.swift; sourceTree = "<group>"; };
+		C19A6F072A3D46C200A74172 /* RightButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightButton.swift; sourceTree = "<group>"; };
+		C19A6F082A3D46C200A74172 /* LeftButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftButton.swift; sourceTree = "<group>"; };
+		C19A6F0D2A3D46F500A74172 /* PlaneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneView.swift; sourceTree = "<group>"; };
+		C19A6F0F2A3DCDC700A74172 /* UfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UfoView.swift; sourceTree = "<group>"; };
+		C19A6F122A3DEC1B00A74172 /* ExplosionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplosionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C19A6EEA2A3D469500A74172 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F362621604F716A0F2E7F68B /* Pods_PlaneGame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11AF912EB20171BEDE42FD73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89869B5089B3F61426094386 /* Pods_PlaneGame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B5159E44930C5A34381B76C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0BD3CF8009F0DF2441E387F /* Pods-PlaneGame.debug.xcconfig */,
+				39B48AE0081B0F0C946095E0 /* Pods-PlaneGame.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C19A6EE42A3D469500A74172 = {
+			isa = PBXGroup;
+			children = (
+				C19A6EEF2A3D469500A74172 /* PlaneGame */,
+				C19A6EEE2A3D469500A74172 /* Products */,
+				2B5159E44930C5A34381B76C /* Pods */,
+				11AF912EB20171BEDE42FD73 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C19A6EEE2A3D469500A74172 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C19A6EED2A3D469500A74172 /* PlaneGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C19A6EEF2A3D469500A74172 /* PlaneGame */ = {
+			isa = PBXGroup;
+			children = (
+				C19A6EF02A3D469500A74172 /* AppDelegate.swift */,
+				C19A6EF22A3D469500A74172 /* SceneDelegate.swift */,
+				C19A6EF42A3D469500A74172 /* ViewController.swift */,
+				C19A6F142A4073FC00A74172 /* Protocols */,
+				C19A6F062A3D46C200A74172 /* Buttons */,
+				C19A6F112A3DEBFE00A74172 /* Views */,
+				C19A6EF62A3D469500A74172 /* Main.storyboard */,
+				C19A6EF92A3D469700A74172 /* Assets.xcassets */,
+				C19A6EFB2A3D469700A74172 /* LaunchScreen.storyboard */,
+				C19A6EFE2A3D469700A74172 /* Info.plist */,
+				C18A86852A420B2200D10B3A /* GoogleService-Info.plist */,
+			);
+			path = PlaneGame;
+			sourceTree = "<group>";
+		};
+		C19A6F062A3D46C200A74172 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				C19A6F072A3D46C200A74172 /* RightButton.swift */,
+				C19A6F082A3D46C200A74172 /* LeftButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		C19A6F112A3DEBFE00A74172 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C19A6F0F2A3DCDC700A74172 /* UfoView.swift */,
+				C19A6F0D2A3D46F500A74172 /* PlaneView.swift */,
+				C19A6F122A3DEC1B00A74172 /* ExplosionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C19A6F142A4073FC00A74172 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C19A6F042A3D46B100A74172 /* Moveable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C19A6EEC2A3D469500A74172 /* PlaneGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19A6F012A3D469700A74172 /* Build configuration list for PBXNativeTarget "PlaneGame" */;
+			buildPhases = (
+				9DA97D8E813318CF8926A3C8 /* [CP] Check Pods Manifest.lock */,
+				C19A6EE92A3D469500A74172 /* Sources */,
+				C19A6EEA2A3D469500A74172 /* Frameworks */,
+				C19A6EEB2A3D469500A74172 /* Resources */,
+				C1DDA0A22A430AC6003F534F /* ShellScript */,
+				5EC561F9E7149CB05A187CD6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlaneGame;
+			productName = PlaneGame;
+			productReference = C19A6EED2A3D469500A74172 /* PlaneGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C19A6EE52A3D469500A74172 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C19A6EEC2A3D469500A74172 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C19A6EE82A3D469500A74172 /* Build configuration list for PBXProject "PlaneGame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C19A6EE42A3D469500A74172;
+			productRefGroup = C19A6EEE2A3D469500A74172 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C19A6EEC2A3D469500A74172 /* PlaneGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C19A6EEB2A3D469500A74172 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19A6EFD2A3D469700A74172 /* LaunchScreen.storyboard in Resources */,
+				C19A6EFA2A3D469700A74172 /* Assets.xcassets in Resources */,
+				C19A6EF82A3D469500A74172 /* Main.storyboard in Resources */,
+				C18A86862A420B2300D10B3A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EC561F9E7149CB05A187CD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlaneGame/Pods-PlaneGame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlaneGame/Pods-PlaneGame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlaneGame/Pods-PlaneGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DA97D8E813318CF8926A3C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlaneGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1DDA0A22A430AC6003F534F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C19A6EE92A3D469500A74172 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19A6F132A3DEC1B00A74172 /* ExplosionView.swift in Sources */,
+				C19A6F052A3D46B100A74172 /* Moveable.swift in Sources */,
+				C19A6EF52A3D469500A74172 /* ViewController.swift in Sources */,
+				C19A6F0B2A3D46C200A74172 /* LeftButton.swift in Sources */,
+				C19A6EF12A3D469500A74172 /* AppDelegate.swift in Sources */,
+				C19A6EF32A3D469500A74172 /* SceneDelegate.swift in Sources */,
+				C19A6F0E2A3D46F500A74172 /* PlaneView.swift in Sources */,
+				C19A6F102A3DCDC700A74172 /* UfoView.swift in Sources */,
+				C19A6F0A2A3D46C200A74172 /* RightButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C19A6EF62A3D469500A74172 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C19A6EF72A3D469500A74172 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C19A6EFB2A3D469700A74172 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C19A6EFC2A3D469700A74172 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C19A6EFF2A3D469700A74172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C19A6F002A3D469700A74172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C19A6F022A3D469700A74172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0BD3CF8009F0DF2441E387F /* Pods-PlaneGame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TTMLBMXL57;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlaneGame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.Kirov.Sergei.PlaneGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C19A6F032A3D469700A74172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39B48AE0081B0F0C946095E0 /* Pods-PlaneGame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TTMLBMXL57;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlaneGame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.Kirov.Sergei.PlaneGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C19A6EE82A3D469500A74172 /* Build configuration list for PBXProject "PlaneGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19A6EFF2A3D469700A74172 /* Debug */,
+				C19A6F002A3D469700A74172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C19A6F012A3D469700A74172 /* Build configuration list for PBXNativeTarget "PlaneGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19A6F022A3D469700A74172 /* Debug */,
+				C19A6F032A3D469700A74172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C19A6EE52A3D469500A74172 /* Project object */;
+}
