@@ -8,12 +8,8 @@
 import UIKit
 
 private extension CGFloat {
-    static let buttonSize = 60.0
-    static let buttonSpacing = 20.0
-    static let buttonLabelFontSize = 60.0
     static let dangerBorder = 70.0
     static let seam = 5.0
-    static let buttonSizeMultiplier = 1.5
     static let scale = 1.0
     static let ufoStep = 1.0
 }
@@ -31,27 +27,41 @@ class ViewController: UIViewController {
     private var leftMountainsFirstImage: UIImageView!
     private var leftMountainsSecondImage: UIImageView!
     private var rightMountainsFirstImage: UIImageView!
-    private var rightMountainsSecondImage: UIImageView!
-    private var moveableButtons: [Moveable] = []
-    
+    private var rightMountainsSecondImage: UIImageView!    
+    private var panGestureRecognizer: UIPanGestureRecognizer!
+    private var shootGesture: UITapGestureRecognizer?
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLandscape()
         setupFlyingViews()
-        setupMoveableButtons()
-        
-        let button = UIButton(type: .roundedRect)
-            button.frame = CGRect(x: 20, y: 50, width: 100, height: 30)
-            button.setTitle("Test Crash", for: [])
-            button.addTarget(self, action: #selector(self.crashButtonTapped(_:)), for: .touchUpInside)
-            view.addSubview(button)
+        setupPlaneGestureRecognizers()
         
     }
     
+    private func setupPlaneGestureRecognizers() {
+        panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
+        planeView.addGestureRecognizer(panGestureRecognizer)
+        shootGesture = UITapGestureRecognizer(target: self, action: #selector(shoot(_:)))
+        guard let shootGesture = shootGesture else { return }
+        planeView.addGestureRecognizer(shootGesture)
+    }
+
+    @objc private func handlePan(_ gestureRecognizer: UIPanGestureRecognizer) {
+        let translation = gestureRecognizer.translation(in: view)
+        
+        switch gestureRecognizer.state {
+        case .began, .changed:
+            planeView.moveBy(x: translation.x, y: translation.y)
+            gestureRecognizer.setTranslation(.zero, in: view)
+        default:
+            break
+        }
+    }
     
-    @IBAction func crashButtonTapped(_ sender: AnyObject) {
-        let numbers = [0]
-        let _ = numbers[1]
+    @objc private func shoot(_ gestureRecognizer: UITapGestureRecognizer) {
+        let pulit = Pulit(planeView: planeView)
+        view.addSubview(pulit)
+        pulit.startAnimation()
     }
     
     private func setupFlyingViews() {
@@ -101,6 +111,7 @@ class ViewController: UIViewController {
     
     func animateLandscape(_ firstImage: UIImageView, _ secondImage: UIImageView){
         let _ = Timer.scheduledTimer(withTimeInterval: .interval, repeats: true) { timer in
+            self.isPlaneCrash()
             firstImage.frame.origin.y += .scale
             secondImage.frame.origin.y += .scale
             if (firstImage.layer.presentation()?.frame.origin.y) == self.view.bounds.origin.y {
@@ -119,6 +130,7 @@ class ViewController: UIViewController {
         let minXUfo = view.frame.minX + .dangerBorder
         let maxXUfo = view.frame.maxX - .dangerBorder - ufoView.frame.width
         Timer.scheduledTimer(withTimeInterval: 0.005, repeats: true) {timer in
+            self.isUfoCrash(ufo: ufoView)
             ufoView.frame.origin.y += .ufoStep
             if ufoView.layer.presentation()?.frame.origin.y ?? -.dangerBorder >= self.view.bounds.maxY {
                 ufoView.frame.origin.y = self.view.frame.minY - .dangerBorder
@@ -135,50 +147,21 @@ class ViewController: UIViewController {
         }
     }
     
-    private func setupMoveableButtons() {
-        let buttonSize: CGFloat = .buttonSize
-        let buttonSpacing: CGFloat = .buttonSpacing
-        
-        let leftButton = LeftButton(type: .system)
-        leftButton.frame = CGRect(
-            x: view.bounds.midX - buttonSize - buttonSpacing,
-            y: view.bounds.height - buttonSize * .buttonSizeMultiplier - buttonSpacing * .buttonSizeMultiplier - view.safeAreaInsets.bottom,
-            width: buttonSize,
-            height: buttonSize)
-        leftButton.setTitle("←", for: .normal)
-        leftButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: .buttonLabelFontSize)
-        leftButton.addTarget(self, action: #selector(moveButtonPressed(_:)), for: .touchUpInside)
-        leftButton.planeView = planeView
-        moveableButtons.append(leftButton)
-        
-        let rightButton = RightButton(type: .system)
-        rightButton.frame = CGRect(x: view.bounds.midX + buttonSpacing,
-                                   y: view.bounds.height - buttonSize * .buttonSizeMultiplier - buttonSpacing * .buttonSizeMultiplier - view.safeAreaInsets.bottom,
-                                   width: buttonSize,
-                                   height: buttonSize)
-        rightButton.setTitle("→", for: .normal)
-        rightButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: .buttonLabelFontSize)
-        rightButton.addTarget(self, action: #selector(moveButtonPressed(_:)), for: .touchUpInside)
-        rightButton.planeView = planeView
-        moveableButtons.append(rightButton)
-        
-        for button in moveableButtons {
-            view.addSubview(button as! UIButton)
+    func isUfoCrash(ufo: UfoView) {
+        for subView in view.subviews {
+            if let pulit = subView as? Pulit {
+                if pulit.frame.intersects(ufo.frame) {
+                    pulit.removeFromSuperview()
+                    ufo.frame.origin.y = -view.frame.height
+                }
+            }
         }
     }
-    
-    func crash() {
+
+    func isPlaneCrash() {
         if planeView.frame.minX <= .dangerBorder || planeView.frame.maxX >= self.view.frame.maxX - .dangerBorder {
             planeIsCrash = true
-
         }
-        
-    }
-    
-    @objc func moveButtonPressed(_ sender: UIButton) {
-        guard let moveableButton = sender as? Moveable else { return }
-        moveableButton.move()
-        crash()
     }
     
 }

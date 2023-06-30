@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C185E5742A4F0C00000649C5 /* Pulit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185E5732A4F0C00000649C5 /* Pulit.swift */; };
 		C18A86862A420B2300D10B3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C18A86852A420B2200D10B3A /* GoogleService-Info.plist */; };
 		C19A6EF12A3D469500A74172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6EF02A3D469500A74172 /* AppDelegate.swift */; };
 		C19A6EF32A3D469500A74172 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6EF22A3D469500A74172 /* SceneDelegate.swift */; };
@@ -14,9 +15,6 @@
 		C19A6EF82A3D469500A74172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19A6EF62A3D469500A74172 /* Main.storyboard */; };
 		C19A6EFA2A3D469700A74172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19A6EF92A3D469700A74172 /* Assets.xcassets */; };
 		C19A6EFD2A3D469700A74172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19A6EFB2A3D469700A74172 /* LaunchScreen.storyboard */; };
-		C19A6F052A3D46B100A74172 /* Moveable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6F042A3D46B100A74172 /* Moveable.swift */; };
-		C19A6F0A2A3D46C200A74172 /* RightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6F072A3D46C200A74172 /* RightButton.swift */; };
-		C19A6F0B2A3D46C200A74172 /* LeftButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6F082A3D46C200A74172 /* LeftButton.swift */; };
 		C19A6F0E2A3D46F500A74172 /* PlaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6F0D2A3D46F500A74172 /* PlaneView.swift */; };
 		C19A6F102A3DCDC700A74172 /* UfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6F0F2A3DCDC700A74172 /* UfoView.swift */; };
 		C19A6F132A3DEC1B00A74172 /* ExplosionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6F122A3DEC1B00A74172 /* ExplosionView.swift */; };
@@ -27,6 +25,7 @@
 		39B48AE0081B0F0C946095E0 /* Pods-PlaneGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaneGame.release.xcconfig"; path = "Target Support Files/Pods-PlaneGame/Pods-PlaneGame.release.xcconfig"; sourceTree = "<group>"; };
 		89869B5089B3F61426094386 /* Pods_PlaneGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaneGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BD3CF8009F0DF2441E387F /* Pods-PlaneGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaneGame.debug.xcconfig"; path = "Target Support Files/Pods-PlaneGame/Pods-PlaneGame.debug.xcconfig"; sourceTree = "<group>"; };
+		C185E5732A4F0C00000649C5 /* Pulit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulit.swift; sourceTree = "<group>"; };
 		C18A86852A420B2200D10B3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C19A6EED2A3D469500A74172 /* PlaneGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaneGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19A6EF02A3D469500A74172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,9 +35,6 @@
 		C19A6EF92A3D469700A74172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C19A6EFC2A3D469700A74172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C19A6EFE2A3D469700A74172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C19A6F042A3D46B100A74172 /* Moveable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moveable.swift; sourceTree = "<group>"; };
-		C19A6F072A3D46C200A74172 /* RightButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightButton.swift; sourceTree = "<group>"; };
-		C19A6F082A3D46C200A74172 /* LeftButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftButton.swift; sourceTree = "<group>"; };
 		C19A6F0D2A3D46F500A74172 /* PlaneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneView.swift; sourceTree = "<group>"; };
 		C19A6F0F2A3DCDC700A74172 /* UfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UfoView.swift; sourceTree = "<group>"; };
 		C19A6F122A3DEC1B00A74172 /* ExplosionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplosionView.swift; sourceTree = "<group>"; };
@@ -98,7 +94,6 @@
 				C19A6EF22A3D469500A74172 /* SceneDelegate.swift */,
 				C19A6EF42A3D469500A74172 /* ViewController.swift */,
 				C19A6F142A4073FC00A74172 /* Protocols */,
-				C19A6F062A3D46C200A74172 /* Buttons */,
 				C19A6F112A3DEBFE00A74172 /* Views */,
 				C19A6EF62A3D469500A74172 /* Main.storyboard */,
 				C19A6EF92A3D469700A74172 /* Assets.xcassets */,
@@ -109,21 +104,13 @@
 			path = PlaneGame;
 			sourceTree = "<group>";
 		};
-		C19A6F062A3D46C200A74172 /* Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				C19A6F072A3D46C200A74172 /* RightButton.swift */,
-				C19A6F082A3D46C200A74172 /* LeftButton.swift */,
-			);
-			path = Buttons;
-			sourceTree = "<group>";
-		};
 		C19A6F112A3DEBFE00A74172 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				C19A6F0F2A3DCDC700A74172 /* UfoView.swift */,
 				C19A6F0D2A3D46F500A74172 /* PlaneView.swift */,
 				C19A6F122A3DEC1B00A74172 /* ExplosionView.swift */,
+				C185E5732A4F0C00000649C5 /* Pulit.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -131,7 +118,6 @@
 		C19A6F142A4073FC00A74172 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				C19A6F042A3D46B100A74172 /* Moveable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -147,8 +133,8 @@
 				C19A6EE92A3D469500A74172 /* Sources */,
 				C19A6EEA2A3D469500A74172 /* Frameworks */,
 				C19A6EEB2A3D469500A74172 /* Resources */,
-				C1DDA0A22A430AC6003F534F /* ShellScript */,
 				5EC561F9E7149CB05A187CD6 /* [CP] Embed Pods Frameworks */,
+				C1DDA0A22A430AC6003F534F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -248,21 +234,22 @@
 		};
 		C1DDA0A22A430AC6003F534F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
 			);
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -271,15 +258,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C185E5742A4F0C00000649C5 /* Pulit.swift in Sources */,
 				C19A6F132A3DEC1B00A74172 /* ExplosionView.swift in Sources */,
-				C19A6F052A3D46B100A74172 /* Moveable.swift in Sources */,
 				C19A6EF52A3D469500A74172 /* ViewController.swift in Sources */,
-				C19A6F0B2A3D46C200A74172 /* LeftButton.swift in Sources */,
 				C19A6EF12A3D469500A74172 /* AppDelegate.swift in Sources */,
 				C19A6EF32A3D469500A74172 /* SceneDelegate.swift in Sources */,
 				C19A6F0E2A3D46F500A74172 /* PlaneView.swift in Sources */,
 				C19A6F102A3DCDC700A74172 /* UfoView.swift in Sources */,
-				C19A6F0A2A3D46C200A74172 /* RightButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +323,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;

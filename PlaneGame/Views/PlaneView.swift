@@ -57,21 +57,7 @@ class PlaneView: UIView {
         
         let clampedX = max(.planeCrashMoment, min(newX, maxX))
         let clampedY = max(0, min(newY, maxY))
-        
-        let newFrame = CGRect(x: clampedX,
-                              y: clampedY,
-                              width: planeSize,
-                              height: planeSize)
-        
-        
-        
-        for button in superview.subviews {
-            if let _ = button as? Moveable, button.frame.intersects(newFrame) {
-                return
-            }
-            
-        }
-        
+
         frame.origin.x = clampedX
         frame.origin.y = clampedY
     }
