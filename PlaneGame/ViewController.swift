@@ -24,10 +24,6 @@ class ViewController: UIViewController {
     private var planeView: PlaneView?
     private var firstUfoView: UfoView?
     private var secondUfoView: UfoView?
-    private var leftMountainsFirstImage: UIImageView?
-    private var leftMountainsSecondImage: UIImageView?
-    private var rightMountainsFirstImage: UIImageView?
-    private var rightMountainsSecondImage: UIImageView?
     private var panGestureRecognizer: UIPanGestureRecognizer?
 
     override func viewDidLoad() {
@@ -86,14 +82,12 @@ class ViewController: UIViewController {
         let mountainsFirstImage = UIImageView(image: UIImage(named: "Mountains"))
         mountainsFirstImage.frame = view.bounds
         view.addSubview(mountainsFirstImage)
-        leftMountainsFirstImage = mountainsFirstImage
 
         let mountainSecondImage = UIImageView(image: UIImage(named: "Mountains"))
         mountainSecondImage.frame = view.bounds
         mountainSecondImage.frame.origin.y = -view.bounds.height
         mountainSecondImage.transform = CGAffineTransform(scaleX: .scale, y: -.scale)
         view.addSubview(mountainSecondImage)
-        leftMountainsSecondImage = mountainSecondImage
 
         let landscapeFrame = CGRect(
             x: view.frame.origin.x + .dangerBorder,
@@ -104,14 +98,12 @@ class ViewController: UIViewController {
         let landscapeFirstImage = UIImageView(image: UIImage(named: "Landscape"))
         landscapeFirstImage.frame = landscapeFrame
         view.addSubview(landscapeFirstImage)
-        rightMountainsFirstImage = landscapeFirstImage
 
         let landscapeSecondImage = UIImageView(image: UIImage(named: "Landscape"))
         landscapeSecondImage.frame = landscapeFrame
         landscapeSecondImage.frame.origin.y = -view.bounds.height
         landscapeSecondImage.transform = CGAffineTransform(scaleX: .scale, y: -.scale)
         view.addSubview(landscapeSecondImage)
-        rightMountainsSecondImage = landscapeSecondImage
 
         animateLandscape(landscapeFirstImage, landscapeSecondImage)
         animateLandscape(mountainsFirstImage, mountainSecondImage)
