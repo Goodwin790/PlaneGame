@@ -8,10 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		C185E5742A4F0C00000649C5 /* Pulit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185E5732A4F0C00000649C5 /* Pulit.swift */; };
+		C185E5FD2A5429BF000649C5 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185E5FC2A5429BF000649C5 /* Player.swift */; };
+		C185E5FF2A542A75000649C5 /* SettingsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185E5FE2A542A75000649C5 /* SettingsScreenViewController.swift */; };
+		C185E6022A5437A5000649C5 /* GameplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185E6012A5437A5000649C5 /* GameplayViewController.swift */; };
+		C185E6052A543911000649C5 /* RecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185E6042A543911000649C5 /* RecordTableViewController.swift */; };
+		C185E62B2A56F11D000649C5 /* PlanePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185E62A2A56F11D000649C5 /* PlanePicker.swift */; };
+		C185E62D2A583910000649C5 /* SaveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185E62C2A58390F000649C5 /* SaveManager.swift */; };
+		C185E6322A5872C8000649C5 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185E6312A5872C8000649C5 /* Double.swift */; };
 		C18A86862A420B2300D10B3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C18A86852A420B2200D10B3A /* GoogleService-Info.plist */; };
 		C19A6EF12A3D469500A74172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6EF02A3D469500A74172 /* AppDelegate.swift */; };
 		C19A6EF32A3D469500A74172 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6EF22A3D469500A74172 /* SceneDelegate.swift */; };
-		C19A6EF52A3D469500A74172 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6EF42A3D469500A74172 /* ViewController.swift */; };
+		C19A6EF52A3D469500A74172 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6EF42A3D469500A74172 /* MainScreenViewController.swift */; };
 		C19A6EF82A3D469500A74172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19A6EF62A3D469500A74172 /* Main.storyboard */; };
 		C19A6EFA2A3D469700A74172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19A6EF92A3D469700A74172 /* Assets.xcassets */; };
 		C19A6EFD2A3D469700A74172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19A6EFB2A3D469700A74172 /* LaunchScreen.storyboard */; };
@@ -26,11 +33,18 @@
 		89869B5089B3F61426094386 /* Pods_PlaneGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaneGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BD3CF8009F0DF2441E387F /* Pods-PlaneGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaneGame.debug.xcconfig"; path = "Target Support Files/Pods-PlaneGame/Pods-PlaneGame.debug.xcconfig"; sourceTree = "<group>"; };
 		C185E5732A4F0C00000649C5 /* Pulit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulit.swift; sourceTree = "<group>"; };
+		C185E5FC2A5429BF000649C5 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		C185E5FE2A542A75000649C5 /* SettingsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenViewController.swift; sourceTree = "<group>"; };
+		C185E6012A5437A5000649C5 /* GameplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayViewController.swift; sourceTree = "<group>"; };
+		C185E6042A543911000649C5 /* RecordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewController.swift; sourceTree = "<group>"; };
+		C185E62A2A56F11D000649C5 /* PlanePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanePicker.swift; sourceTree = "<group>"; };
+		C185E62C2A58390F000649C5 /* SaveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveManager.swift; sourceTree = "<group>"; };
+		C185E6312A5872C8000649C5 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		C18A86852A420B2200D10B3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C19A6EED2A3D469500A74172 /* PlaneGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaneGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19A6EF02A3D469500A74172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C19A6EF22A3D469500A74172 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C19A6EF42A3D469500A74172 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C19A6EF42A3D469500A74172 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		C19A6EF72A3D469500A74172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C19A6EF92A3D469700A74172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C19A6EFC2A3D469700A74172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +83,40 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C185E5FB2A5429AC000649C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C185E5FC2A5429BF000649C5 /* Player.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C185E6002A542C17000649C5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C185E6032A5438DD000649C5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C19A6EF42A3D469500A74172 /* MainScreenViewController.swift */,
+				C185E6012A5437A5000649C5 /* GameplayViewController.swift */,
+				C185E5FE2A542A75000649C5 /* SettingsScreenViewController.swift */,
+				C185E6042A543911000649C5 /* RecordTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C185E6302A5872B5000649C5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C185E6312A5872C8000649C5 /* Double.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C19A6EE42A3D469500A74172 = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +140,11 @@
 			children = (
 				C19A6EF02A3D469500A74172 /* AppDelegate.swift */,
 				C19A6EF22A3D469500A74172 /* SceneDelegate.swift */,
-				C19A6EF42A3D469500A74172 /* ViewController.swift */,
+				C185E62C2A58390F000649C5 /* SaveManager.swift */,
+				C185E6302A5872B5000649C5 /* Extensions */,
+				C185E6032A5438DD000649C5 /* ViewControllers */,
+				C185E6002A542C17000649C5 /* ViewModels */,
+				C185E5FB2A5429AC000649C5 /* Models */,
 				C19A6F142A4073FC00A74172 /* Protocols */,
 				C19A6F112A3DEBFE00A74172 /* Views */,
 				C19A6EF62A3D469500A74172 /* Main.storyboard */,
@@ -111,6 +163,7 @@
 				C19A6F0D2A3D46F500A74172 /* PlaneView.swift */,
 				C19A6F122A3DEC1B00A74172 /* ExplosionView.swift */,
 				C185E5732A4F0C00000649C5 /* Pulit.swift */,
+				C185E62A2A56F11D000649C5 /* PlanePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -260,10 +313,17 @@
 			files = (
 				C185E5742A4F0C00000649C5 /* Pulit.swift in Sources */,
 				C19A6F132A3DEC1B00A74172 /* ExplosionView.swift in Sources */,
-				C19A6EF52A3D469500A74172 /* ViewController.swift in Sources */,
+				C185E62B2A56F11D000649C5 /* PlanePicker.swift in Sources */,
+				C185E6052A543911000649C5 /* RecordTableViewController.swift in Sources */,
+				C185E62D2A583910000649C5 /* SaveManager.swift in Sources */,
+				C19A6EF52A3D469500A74172 /* MainScreenViewController.swift in Sources */,
+				C185E6322A5872C8000649C5 /* Double.swift in Sources */,
+				C185E5FF2A542A75000649C5 /* SettingsScreenViewController.swift in Sources */,
 				C19A6EF12A3D469500A74172 /* AppDelegate.swift in Sources */,
+				C185E5FD2A5429BF000649C5 /* Player.swift in Sources */,
 				C19A6EF32A3D469500A74172 /* SceneDelegate.swift in Sources */,
 				C19A6F0E2A3D46F500A74172 /* PlaneView.swift in Sources */,
+				C185E6022A5437A5000649C5 /* GameplayViewController.swift in Sources */,
 				C19A6F102A3DCDC700A74172 /* UfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

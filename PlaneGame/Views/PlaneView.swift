@@ -15,7 +15,8 @@ private extension CGFloat {
 
 class PlaneView: UIView {
     private let planeSize: CGFloat = .planeSize
-    private var animationImages: [UIImage] = []
+    private var imageView: UIImageView?
+    private let saveManager = SaveManager()
     override init(frame: CGRect) {
         let newFrame = CGRect(x: frame.midX - planeSize / 2,
                               y: frame.midY ,
@@ -31,19 +32,17 @@ class PlaneView: UIView {
     }
     
     private func setupView() {
-        for i in 1...3 {
-            if let image = UIImage(named: "Plane\(i)") {
-                animationImages.append(image)
-            }
-        }
-        
-        let imageView = UIImageView(frame: bounds)
+        imageView = UIImageView(frame: bounds)
+        guard let imageView = imageView else { return }
+        let player = saveManager.loadPlayer()
+        if let player = player {
+            let image = saveManager.loadImage(fileName: player.plane)
+            imageView.image = image
+        } //else {
+////            imageView.image = UIImage(named: "Plane1")
+////        }
         imageView.contentMode = .scaleAspectFit
         addSubview(imageView)
-        imageView.animationImages = animationImages
-        imageView.animationDuration = 0.3
-        imageView.animationRepeatCount = 0
-        imageView.startAnimating()
     }
 
     func moveBy(x: CGFloat, y: CGFloat) {
